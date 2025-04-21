@@ -4,7 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Choohitha's Portfolio</title>
+  <!-- If you later want external CSS, you can uncomment this and move the styles into style.css -->
+  <!-- <link rel="stylesheet" href="style.css"> -->
   <style>
+    /* Base Styles */
     body {
       font-family: Arial, sans-serif;
       background: #f5f5f5;
@@ -15,8 +18,9 @@
     header {
       background-color: #4CAF50;
       color: white;
-      padding: 20px 0;
+      padding: 30px 0;
       text-align: center;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     }
     section {
       padding: 40px;
@@ -25,12 +29,47 @@
     }
     h2 {
       color: #4CAF50;
+      margin-top: 40px;
     }
+    a {
+      color: #4CAF50;
+      text-decoration: none;
+    }
+    a:hover {
+      color: #f39c12;
+      text-decoration: underline;
+    }
+
+    /* Project Grid */
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      list-style: none;
+      padding: 0;
+    }
+    li {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+      width: calc(33.333% - 20px);
+      box-sizing: border-box;
+      transition: transform 0.2s ease-in-out;
+    }
+    li:hover {
+      transform: scale(1.05);
+    }
+
+    /* Footer */
     footer {
       text-align: center;
-      padding: 10px;
+      padding: 20px;
       background: #ddd;
       margin-top: 40px;
+    }
+    footer a:hover {
+      color: #f39c12;
     }
   </style>
 </head>
@@ -46,17 +85,31 @@
 
     <h2>Projects</h2>
     <ul>
-      <li><strong>FitGenie</strong> – AI-powered fitness planner using FastAPI + React</li>
-      <li><strong>Image Caption Generator</strong> – Deep Learning project on Flickr8K dataset</li>
+      <li>
+        <h3>FitGenie</h3>
+        <p>AI-powered fitness planner using FastAPI + React</p>
+        <a href="https://github.com/Choohitha/FitGenie" target="_blank">View on GitHub</a>
+      </li>
+      <li>
+        <h3>Image Caption Generator</h3>
+        <p>Deep Learning project on Flickr8K dataset</p>
+        <a href="https://github.com/Choohitha/Image-Caption-Generator" target="_blank">View on GitHub</a>
+      </li>
+      <!-- Add more project items here -->
     </ul>
 
     <h2>Contact</h2>
-    <p>Email: choohitha@example.com</p>
+    <p>Email: <a href="mailto:choohitha@example.com">choohitha@example.com</a></p>
     <p>GitHub: <a href="https://github.com/Choohitha" target="_blank">Choohitha</a></p>
   </section>
 
   <footer>
     <p>&copy; 2025 Choohitha. All rights reserved.</p>
+    <p>
+      Follow me on:
+      <a href="https://linkedin.com/in/choohitha" target="_blank">LinkedIn</a> |
+      <a href="https://github.com/Choohitha" target="_blank">GitHub</a>
+    </p>
   </footer>
 </body>
 </html>
