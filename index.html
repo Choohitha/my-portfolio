@@ -4,8 +4,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Choohitha's Portfolio</title>
-  <!-- If you later want external CSS, you can uncomment this and move the styles into style.css -->
-  <!-- <link rel="stylesheet" href="style.css"> -->
   <style>
     /* Base Styles */
     body {
@@ -18,18 +16,30 @@
     header {
       background-color: #4CAF50;
       color: white;
-      padding: 30px 0;
+      padding: 40px 0;
       text-align: center;
       box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     }
     section {
-      padding: 40px;
-      max-width: 800px;
+      padding: 60px 20px;
+      max-width: 900px;
       margin: auto;
+    }
+    h1 {
+      font-size: 3em;
+      margin: 0;
+    }
+    p {
+      font-size: 1.2em;
     }
     h2 {
       color: #4CAF50;
       margin-top: 40px;
+      font-size: 2em;
+    }
+    h3 {
+      font-size: 1.5em;
+      color: #333;
     }
     a {
       color: #4CAF50;
@@ -44,18 +54,18 @@
     ul {
       display: flex;
       flex-wrap: wrap;
-      gap: 20px;
+      gap: 30px;
       list-style: none;
       padding: 0;
     }
     li {
       background-color: #fff;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-      width: calc(33.333% - 20px);
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+      width: calc(50% - 20px);
       box-sizing: border-box;
-      transition: transform 0.2s ease-in-out;
+      transition: transform 0.3s ease-in-out;
     }
     li:hover {
       transform: scale(1.05);
@@ -64,12 +74,25 @@
     /* Footer */
     footer {
       text-align: center;
-      padding: 20px;
+      padding: 30px;
       background: #ddd;
       margin-top: 40px;
     }
     footer a:hover {
       color: #f39c12;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      li {
+        width: 100%;
+      }
+      h1 {
+        font-size: 2.5em;
+      }
+      h2 {
+        font-size: 1.8em;
+      }
     }
   </style>
 </head>
@@ -81,47 +104,41 @@
 
   <section>
     <h2>About Me</h2>
-    <p>Hello! I'm Choohitha, a passionate developer building smart solutions with AI and web technologies.</p>
+    <p>Hello! I'm Choohitha, a passionate developer building smart solutions with AI and web technologies. I am constantly learning and experimenting with new tools to create innovative solutions for real-world problems.</p>
 
     <h2>Projects</h2>
     <ul>
       <li>
         <h3>FitGenie</h3>
-        <p>AI-powered fitness planner using FastAPI + React</p>
+        <p>AI-powered fitness planner using FastAPI + React. Helps users create personalized workout and nutrition plans.</p>
         <a href="https://github.com/Choohitha/FitGenie" target="_blank">View on GitHub</a>
       </li>
       <li>
         <h3>Image Caption Generator</h3>
-        <p>Deep Learning project on Flickr8K dataset</p>
+        <p>Deep Learning project on the Flickr8K dataset, generating captions for images using CNN and RNN models.</p>
         <a href="https://github.com/Choohitha/Image-Caption-Generator" target="_blank">View on GitHub</a>
       </li>
-      <!-- New Projects -->
       <li>
-        <h3>Weather Wizard</h3>
-        <p>A React app that shows the current weather by calling the OpenWeather API.</p>
-        <a href="https://github.com/Choohitha/Weather-Wizard" target="_blank">View on GitHub</a>
-        <br>
-        <a href="https://weather-wizard.choohitha.io" target="_blank">Live Demo</a>
-      </li>
-      <li>
-        <h3>BlogGPT</h3>
-        <p>A simple blog platform with AI-generated summaries using GPT‑3 and Django.</p>
-        <a href="https://github.com/Choohitha/BlogGPT" target="_blank">View on GitHub</a>
+        <h3>Spacecraft Health Monitoring System</h3>
+        <p>Real-time spacecraft health monitoring system that uses sensor data to track the health of spacecraft systems and generate alerts for maintenance needs.</p>
+        <a href="https://github.com/Choohitha/Spacecraft-Health-Monitoring" target="_blank">View on GitHub</a>
       </li>
     </ul>
 
     <h2>Contact</h2>
-<p>Email: <a href="mailto:choohitha0930@gmail.com">choohitha0930@gmail.com</a></p>
-<p>GitHub: <a href="https://github.com/Choohitha" target="_blank">Choohitha</a></p>
-</section>
+    <p>Email: <a href="mailto:choohitha0930@gmail.com">choohitha0930@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/Choohitha" target="_blank">Choohitha</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/choohitha" target="_blank">Choohitha</a></p>
+  </section>
 
-<footer>
-  <p>&copy; 2025 Choohitha. All rights reserved.</p>
-  <p>
-    Follow me on:
-    <a href="https://linkedin.com/in/choohitha" target="_blank">LinkedIn</a> |
-    <a href="https://github.com/Choohitha" target="_blank">GitHub</a>
-  </p>
-</footer>
+  <footer>
+    <p>&copy; 2025 Choohitha. All rights reserved.</p>
+    <p>
+      Follow me on:
+      <a href="https://linkedin.com/in/choohitha" target="_blank">LinkedIn</a> |
+      <a href="https://github.com/Choohitha" target="_blank">GitHub</a>
+    </p>
+  </footer>
 </body>
 </html>
+
